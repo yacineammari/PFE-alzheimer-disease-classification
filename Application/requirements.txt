@@ -1,0 +1,9 @@
+matplotlib==3.5.1
+nipype==1.7.1
+numpy==1.22.3
+opencv_python_headless==4.5.5.64
+PyQt5==5.15.7
+pyqtgraph==0.12.4
+scipy==1.8.0
+SimpleITK==2.1.1.2
+tensorflow==2.9.1

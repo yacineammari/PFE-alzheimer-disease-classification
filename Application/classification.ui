@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>832</width>
+    <height>560</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>832</width>
+    <height>560</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>832</width>
+    <height>560</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Classification Tool</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>811</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Welcome To MRI classification Tool:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="classify">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>510</y>
+      <width>801</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Classify</string>
+    </property>
+    <property name="icon">
+     <iconset resource="app_icon.qrc">
+      <normaloff>:/icon/icon/classification.png</normaloff>:/icon/icon/classification.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>402</width>
+      <height>428</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Input:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="img_canves">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>400</width>
+         <height>400</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>400</width>
+         <height>400</height>
+        </size>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>60</y>
+      <width>402</width>
+      <height>428</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Prediction:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="prob_canves">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>400</width>
+         <height>400</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>400</width>
+         <height>400</height>
+        </size>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="actionAdd_File">
+   <property name="icon">
+    <iconset resource="app_icon.qrc">
+     <normaloff>:/icon/icon/folder.png</normaloff>:/icon/icon/folder.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add File</string>
+   </property>
+   <property name="toolTip">
+    <string>Add file</string>
+   </property>
+  </action>
+  <action name="actionImage_Preprocessing">
+   <property name="icon">
+    <iconset resource="app_icon.qrc">
+     <normaloff>:/icon/icon/processing.png</normaloff>:/icon/icon/processing.png</iconset>
+   </property>
+   <property name="text">
+    <string>Image Preprocessing</string>
+   </property>
+   <property name="toolTip">
+    <string>Image Preprocessing</string>
+   </property>
+  </action>
+  <action name="actionClassification">
+   <property name="icon">
+    <iconset resource="app_icon.qrc">
+     <normaloff>:/icon/icon/classification.png</normaloff>:/icon/icon/classification.png</iconset>
+   </property>
+   <property name="text">
+    <string>Classification</string>
+   </property>
+   <property name="toolTip">
+    <string>Classification</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="app_icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>icon/see.png</file>
+    <file>icon/processing.png</file>
+    <file>icon/folder.png</file>
+    <file>icon/color palette.png</file>
+    <file>icon/classification.png</file>
+  </qresource>
+</RCC>

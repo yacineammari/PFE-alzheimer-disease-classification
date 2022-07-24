@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>250</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>450</width>
+    <height>250</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>450</width>
+    <height>250</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Preprocessing</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>40</y>
+      <width>431</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Skull Stripping Time: </string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="stat_sks">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="stat_affine_reg">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Affine Registration Time:</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>431</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Please Click On Start To Apply The Standard PipeLine:</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>160</y>
+      <width>431</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>190</y>
+      <width>431</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QProgressBar" name="progressBar">
+       <property name="maximumSize">
+        <size>
+         <width>257</width>
+         <height>28</height>
+        </size>
+       </property>
+       <property name="maximum">
+        <number>1</number>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
+       <property name="textDirection">
+        <enum>QProgressBar::TopToBottom</enum>
+       </property>
+       <property name="format">
+        <string>%p%</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="cancel_done">
+       <property name="text">
+        <string>Close</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="start">
+       <property name="text">
+        <string>Start</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="actionAdd_File">
+   <property name="icon">
+    <iconset resource="app_icon.qrc">
+     <normaloff>:/icon/icon/folder.png</normaloff>:/icon/icon/folder.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add File</string>
+   </property>
+   <property name="toolTip">
+    <string>Add file</string>
+   </property>
+  </action>
+  <action name="actionImage_Preprocessing">
+   <property name="icon">
+    <iconset resource="app_icon.qrc">
+     <normaloff>:/icon/icon/processing.png</normaloff>:/icon/icon/processing.png</iconset>
+   </property>
+   <property name="text">
+    <string>Image Preprocessing</string>
+   </property>
+   <property name="toolTip">
+    <string>Image Preprocessing</string>
+   </property>
+  </action>
+  <action name="actionClassification">
+   <property name="icon">
+    <iconset resource="app_icon.qrc">
+     <normaloff>:/icon/icon/classification.png</normaloff>:/icon/icon/classification.png</iconset>
+   </property>
+   <property name="text">
+    <string>Classification</string>
+   </property>
+   <property name="toolTip">
+    <string>Classification</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="app_icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>
